@@ -217,9 +217,9 @@
                     rc += possible.charAt(Math.floor(Math.random() * possible.length));
                 }
                 $.ajax({
-                
-                    type: "GET",
-                    url:  "new/"+rc //@@
+                    data:{pname:rc},
+                    type: "POST",
+                    url:  "new" //@@
                 });
 
                 // set listener for play song===================

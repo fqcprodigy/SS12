@@ -7,9 +7,9 @@
  * @author fqcprodigy
  */
 class ReadyController extends BaseController{
-    public function newPlayer($pname)
+    public function newPlayer()
     {
-        //$pname=Input::get('pname');
+        $pname=Input::get('pname');
         $player=new Player();
         $player->PlayerID=$pname;
         $player->Room=0;
