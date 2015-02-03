@@ -219,7 +219,7 @@
                 $.ajax({
                     data:{pname:rc},
                     type: "POST",
-                    url:  "new" //@@
+                    url:  "newplayer" //@@
                 });
 
                 // set listener for play song===================
@@ -314,7 +314,7 @@
                 $.ajax({
                     
                     type: "GET",
-                    url:  "win",
+                    url:  "result",
                     success:
                         function(response){
                             if(response==999){
@@ -409,7 +409,7 @@
                 $.ajax({
                     data: {status:s},
                     type: "GET",
-                    url:  "match", //@@
+                    url:  "opponent", //@@
                     success: 
                         function(response){
                             matched = response; 
@@ -463,7 +463,7 @@
                 // tell server to delete the user from game
                 $.ajax({
                     type: "GET",
-                    url:  "delete" //@@
+                    url:  "done" //@@
                 });
             }
 
